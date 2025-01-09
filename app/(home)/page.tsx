@@ -8,22 +8,21 @@ const HomePage = () => {
       {/* Hero Section */}
       <div className="max-w-3xl text-center">
         <h1 className="mb-6 text-6xl font-bold tracking-tight text-foreground">
-          Start building with Next.js
+          Panduan Bagi Admin
         </h1>
-        <p className="mb-12 text-xl text-muted-foreground">
-          Go from beginner to expert by learning the foundations of Next.js and building
-          a fully functional demo website that uses all the latest features.
+        <p className="mb-12 text-xl text-fd-muted-foreground">
+          Dokumentasi pengaturan akun dari mulai menambahkan member, mengatur model, memasang API Key, mengaktifkan plugin, dan lain sebagainya.
         </p>
 
         <p className="mb-6 text-fd-muted-foreground">
-        You can open{' '}
+        Buka halaman{' '}
         <Link
           href="/docs"
           className="text-fd-foreground font-semibold underline"
         >
           /docs
         </Link>{' '}
-        and see the documentation.
+        untuk melihat panduan.
       </p>
       </div>
 
@@ -34,29 +33,32 @@ const HomePage = () => {
           <div className="border-b bg-muted/50 p-6">
             <div className="flex items-center">
               <BookOpen className="mr-3 h-5 w-5" />
-              <h2 className="text-xl font-semibold">Learn Next.js</h2>
+              <h2 className="text-xl font-semibold">Tentang MAIA ID</h2>
               <div className="ml-auto">
                 <div className="h-6 w-6 rounded-sm bg-primary" />
               </div>
             </div>
             <p className="mt-1 text-sm text-muted-foreground">
-              Chapter 1: Getting Started
+            MAIA adalah platform yang memungkinkan komunitas, perusahaan
+            dan institusi untuk membuat ChatGPT kustom versi mereka sendiri.
             </p>
           </div>
 
           {/* Card Content */}
           <div className="p-6">
-            <h3 className="text-xl font-semibold">Learn Next.js</h3>
+            <h3 className="text-xl font-semibold">White-Label</h3>
             <p className="mt-2 text-muted-foreground">
-              16 chapters that take you from React to Next.js.
+              Buat ChatGPT kustom versi sendiri untuk tim dan institusimu.
             </p>
 
             <div className="mt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <h4 className="font-semibold">Chapter 1: Getting Started</h4>
+                  <h4 className="font-semibold">Fitur:</h4>
                   <p className="text-sm text-muted-foreground">
-                    Dive into the course materials
+                  Mendukung banyak model Al (ChatGPT GPT4, Google Gemini, Claude, Perplexity, dil) Unlimited
+                  User, No Limit Per-jam | Baca dokumen PDF, DOC, PPT dan XLS | Buat gambar Al Whitelabel | GPTs
+                  dan Prompt Library | Dan banyak fitur Al lainnya.
                   </p>
                 </div>
                 <div className="h-8 w-8 rounded-full bg-muted" />
