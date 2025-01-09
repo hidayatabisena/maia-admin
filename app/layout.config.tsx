@@ -18,5 +18,10 @@ export const baseOptions: BaseLayoutProps = {
       url: '/docs',
       active: 'nested-url',
     },
+    {
+      text: 'MAIA',
+      url: 'https://maia.id',
+      active: 'nested-url',
+    },
   ],
 };
