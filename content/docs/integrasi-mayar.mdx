@@ -1,0 +1,89 @@
+---
+title: Integrasi Mayar
+description: Pengaturan untuk auto-invitations dan billing system dengan Mayar
+---
+
+## Apa yang harus disiapkan?
+
+Untuk mengintegrasikan Mayar dengan platform MAIA, lakukan pengaturan di dashboard MAIA anda pada menu **Mayar Integration**.
+
+Contohnya seperti gambar berikut: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736494937/maia/mayar-integration_l9ine5.webp)
+
+Beberapa hal yang perlu diisi adalah:
+
+- **Mayar API Key**: Masukkan API key dari Mayar
+- **Mayar Product ID**: Masukkan Product ID dari Mayar
+- **Mayar Webhook Token**: Masukkan Webhook Token dari Mayar
+- **Mayar Product URL**: Masukkan Product URL dari Mayar
+
+Untuk mengisi field-field tersebut, silahkan buka dashboard Mayar Anda. 
+
+## Dashboard Mayar
+
+1. Login ke web.mayar.id dengan akun Anda, lalu buat Product Membership (bukan SaaS).
+[Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736495308/maia/create-membership_jdilye.webp)
+
+2. Klik pada tombol Buat Tier / Level / Membership seperti contoh gambar berikut: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736495741/maia/tier-membership_x3lila.webp)
+
+3. Produk Membership selesai dibuat, silahkan Copy product ID yang tercantum pada product detail. Contohnya seperti gambar berikut: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736497851/maia/copyProductID_nk2jym.webp)
+
+## Dashboard MAIA
+Kembali ke pengaturan Mayar Integration dimana terdapat 4 textfield yang harus diisi yaitu:
+
+### 1. Mayar API Key
+
+a. Generate API Key Mayar yang ada pada link ini: https://web.mayar.id/api-keys
+Copy dan simpan di Notes
+
+b. Paste API Key ke field Mayar API Key di dashboard MAIA
+
+### 2. Mayar ProductID
+
+a. ProductID didapatkan dari halaman Membership detail. Contohnya pada [link gambar ini:](https://res.cloudinary.com/moyadev/image/upload/v1736497851/maia/copyProductID_nk2jym.webp)
+
+b. Paste ProductID ke field Mayar Product ID di dashboard MAIA
+
+### 3. Mayar Webhook Token
+
+a. Webhook Token didapatkan dari halaman https://web.mayar.id/api-keys. Contohnya pada [link gambar ini:](https://res.cloudinary.com/moyadev/image/upload/v1736498620/maia/webhookMayar_gmhywy.webp)
+
+b. Copy Webhook Token dan Paste ke field Mayar Webhook Token di dashboard MAIA
+
+### 4. Mayar Product URL
+
+a. Product URL bisa menggunakan halaman checkout, didapatkan dari halaman Membership detail. Contohnya pada [Gambar ini](https://res.cloudinary.com/moyadev/image/upload/v1736498973/maia/productURLMayar_b8zpoi.webp)
+
+b. Copy halaman checkout tersebut dan Paste ke field Mayar Product URL di dashboard MAIA
+
+## Integrasi Mayar selesai
+
+Pada dasarnya yang sedang dilakukan adalah membuat halaman Pricing dengan menggunakan Mayar Product URL yang telah diisi pada langkah 4.
+
+Selanjutnya:
+
+- Lakukan **Confirm Integration** di dashboard MAIA, contohnya pada gambar ini: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736499493/maia/ConfirmIntegration_gxfsvg.webp)
+
+- Pengaturan berikutnya bisa dilihat pada gambar berikut, silahkan sesuaikan kontennya: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736499800/maia/SaveConfig_iltrzf.webp)
+
+- Jangan lupa untuk mengisi detail harga dan deskripsi produk tier nya. Contohnya seperti gambar ini: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736501400/maia/pricingTier_enstws.webp)
+
+<Callout title="Info">hasil akhir dari pengaturan harga dan deskripsi produk tier dapat dilihat pada gambar ini: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736503562/maia/pricing_foiks1.webp)</Callout>
+
+
+- Simpan pengaturan
+
+- Langkah terakhir, lakukan sinkronisasi dengan cara klik tombol sync. Contohnya ada pada gambar ini: [Link gambar](https://res.cloudinary.com/moyadev/image/upload/v1736500419/maia/sync_jy6ptm.webp)
+
+
+## What next?
+
+Ketika ada user / calon member yang klik link register di platform AI Anda, maka akan muncul halaman pricing yang tadi telah diatur. 
+
+Selanjutnya, user tersebut akan diarahkan ke halaman checkout Mayar.
+
+
+
+
+
+
+

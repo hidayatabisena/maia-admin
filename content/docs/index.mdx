@@ -1,13 +1,43 @@
 ---
-title: Hello World
-description: Your first document
+title: White-Label MAIA
+description: Panduan registrasi dan white-label platform MAIA 
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
 
-## What is Next?
+## Custom Domain
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
+1. Siapkan terlebih dahulu subdomain yang akan digunakan. Misalnya `chat.namadomain.com` atau `ai.namadomain.id`, atau `app.namadomain.com`
+
+2. Tambahkan **CNAME** record pada domain anda dengan value sebagai berikut:
+
+```bash
+Tipe: diisi dengan CNAME
+Name: sesuaikan dengan subdomain yang diinginkan. misalnya jika subdomainnya ingin ai.namadomain.id, maka pada name ini cukup diisi ai saja
+Target: diisi dengan cname.maia.id 
+TTL: 14400 atau jika pilihannya jam, pilih 1/2 hour
+```
+<Callout title="Info">petunjuk membuat CNAME record bisa dilihat pada artikel berikut ini: [https://support.hostinger.com/id/articles/4738777-bagaimana-cara-menambah-dan-menghapus-cname-record-di-hpanel](https://support.hostinger.com/id/articles/4738777-bagaimana-cara-menambah-dan-menghapus-cname-record-di-hpanel)</Callout>
+
+3. Setelah menambahkan **CNAME** record diatas, proses propagasi bergantung provider domain yang digunakan. Ada yang paling cepat beberapa menit sudah aktif, ada juga yang butuh waktu 1 x 24 jam. Pengecekkan bisa dilakukan melalui link ini: https://dns.google/resolve?name=masukkandomainanda&type=CNAME
+
+Berikut ini screenshot contoh: [Google DNS](https://file.notion.so/f/f/66a727ca-b04b-430a-8ae7-95c6f3758ba7/249084ff-997f-40a5-bf2d-6b13051a6e9f/CleanShot_2025-01-02_at_10.13.462x.png?table=block&id=16f98022-790e-8079-b4bf-c4d130c02589&spaceId=66a727ca-b04b-430a-8ae7-95c6f3758ba7&expirationTimestamp=1736517600000&signature=fjtMzNaFPU3keEpXtNd1Yg7U_RVmHA4nfgWCf66v9YA&downloadName=CleanShot+2025-01-02+at+10.13.46%402x.png)
+
+## Register Akun di Web MAIA
+
+1. Setelah menerima kode lisensi MAIA dari Sales, langkah berikutnya buat akun di https://web.maia.id/auth/register
+
+2. Lalu masuk ke menu pengaturan akun dan input kode lisensi tersebut di bagian **Upgrade to Pro**. Contohnya pada gambar berikut: [Link gambar](https://file.notion.so/f/f/66a727ca-b04b-430a-8ae7-95c6f3758ba7/b7cd40b6-5a0d-44b0-930f-b9dedc7f53e0/CleanShot_2025-01-02_at_09.44.592x.png?table=block&id=16f98022-790e-80ec-8435-c5e7a7edda5d&spaceId=66a727ca-b04b-430a-8ae7-95c6f3758ba7&expirationTimestamp=1736517600000&signature=QtfWTvwrU29NrfzflKuAcH1ehqA_Lg4va-EOcK-B2cY&downloadName=CleanShot+2025-01-02+at+09.44.59%402x.png)
+
+3. Setelah itu masuk ke menu Custom untuk menambahkan Custom Domain yang tadi telah dibuat. Contohnya seperti gambar berikut ini: [Link gambar](https://file.notion.so/f/f/66a727ca-b04b-430a-8ae7-95c6f3758ba7/715b4cd1-f562-4fbe-911d-85860d6542de/CleanShot_2025-01-02_at_10.21.262x.png?table=block&id=16f98022-790e-80f8-a425-f09846b8557d&spaceId=66a727ca-b04b-430a-8ae7-95c6f3758ba7&expirationTimestamp=1736517600000&signature=7t-TedW17kYABbwvIq5XFDEMtiaLDahsVo2KveOLPsA&downloadName=CleanShot+2025-01-02+at+10.21.26%402x.png)
+
+4. Setelah subdomain sukses ter-deploy, logout dari `web.maia.id` dan login di subdomain yang sukses terdeploy tadi. Misalnya `ai.namadomain.id`
+
+<Callout title="Info">Jangan login di web.maia.id setelah custom domainnya sukses terdeploy, karena pengaturan apapun yang dilakukan di web.maia.id tidak akan ada impact nya ke custom domain anda. Lakukan pengaturan dan penggunaan MAIA yang telah di white-label di subdomain anda yang baru (misalnya tadi ai.namadomain.id)</Callout>
+
+## Login di Custom Domain
+
+## 
+
+- Proses White-Label sudah selesai saat Anda bisa login di subdomain yang tadi didaftarkan
+
+- Untuk tutorial penggunaan AI nya, bisa dilihat pada tutorial berikut ini: https://docs-maia.vercel.app/
